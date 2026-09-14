@@ -10,21 +10,26 @@ body {
 }
 
 header {
-  background: #111111;
-  color: white;
   padding: 32px 20px;
   text-align: center;
+  background: #111111;
+  color: white;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 38px;
-  letter-spacing: 3px;
+.ayo-logo {
+  display: block;
+  width: 260px;
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
 }
 
-header p {
-  margin: 8px 0 0;
+.tagline {
+  margin: 14px 0 0;
   color: #d8ff45;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 main {
@@ -35,9 +40,9 @@ main {
 }
 
 .card {
-  background: white;
   margin-bottom: 18px;
   padding: 22px;
+  background: white;
   border-radius: 18px;
   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
 }
@@ -49,10 +54,10 @@ main {
 button {
   width: 100%;
   padding: 15px;
+  color: white;
+  background: #111111;
   border: none;
   border-radius: 30px;
-  background: #111111;
-  color: white;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -62,8 +67,43 @@ button:hover {
   background: #333333;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid #dddddd;
-  margin: 20px 0;
+.court-map-card {
+  padding: 16px;
+  overflow: hidden;
+}
+
+.court-map-card h2,
+.court-map-card p {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.court-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 18px;
+  border-radius: 14px;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 26px 16px;
+  }
+
+  .ayo-logo {
+    width: 220px;
+  }
+
+  main {
+    padding: 14px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .court-map-card {
+    padding: 12px;
+  }
 }
