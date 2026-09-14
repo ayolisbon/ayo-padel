@@ -1,34 +1,94 @@
-.ayo-logo {
-  display: block;
-  width: 260px;
-  max-width: 75%;
-  height: auto;
-  margin: 0 auto;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.tagline {
-  margin-top: 14px;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  color: #d8ff45;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.court-map-card {
-  padding: 16px;
-  overflow: hidden;
-}
+  <title>AYO Padel Tournament</title>
 
-.court-map-card h2,
-.court-map-card p {
-  padding-left: 6px;
-  padding-right: 6px;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
 
-.court-map-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: 18px;
-  border-radius: 14px;
-}
+<body>
+
+  <header>
+    <img
+      src="ayo-logo.png"
+      alt="AYO Lisbon"
+      class="ayo-logo"
+    >
+
+    <p class="tagline">
+      PADEL · HOUSE · SUNSET
+    </p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>🔴 LIVE</h2>
+
+      <h3 id="round-number">
+        Loading tournament…
+      </h3>
+
+      <p id="round-time"></p>
+
+      <p id="countdown-label">
+        Tournament starts in
+      </p>
+
+      <h2 id="countdown">Loading…</h2>
+    </section>
+
+    <section>
+      <h2>Current Matches</h2>
+
+      <div id="courts-grid">
+        <p>Loading courts…</p>
+      </div>
+    </section>
+
+    <section class="card court-map-card" id="court-map">
+      <h2>Find Your Court</h2>
+
+      <p>
+        Check the court number in your schedule and find it on the map.
+      </p>
+
+      <img
+        src="court-map.jpg"
+        alt="Map showing AYO padel courts 1 to 8"
+        class="court-map-image"
+      >
+    </section>
+
+    <section class="card">
+      <h2>My Ticket</h2>
+
+      <p>
+        Enter your personal ticket code to see your matches.
+      </p>
+
+      <button type="button">
+        Find my ticket
+      </button>
+    </section>
+
+    <section class="card">
+      <h2>Leaderboard</h2>
+      <p>Results will appear during the tournament.</p>
+    </section>
+
+    <section class="card">
+      <h2>Upcoming Events</h2>
+      <p>More AYO events coming soon.</p>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
