@@ -41,8 +41,8 @@ header img {
   top: 15px;
   right: 15px;
   display: block;
-  width: 55px !important;
-  max-width: 55px !important;
+  width: 95px !important;
+  max-width: 95px !important;
   height: auto !important;
   margin: 0 !important;
 }
@@ -126,8 +126,8 @@ button:hover {
   header img {
     top: 12px;
     right: 12px;
-    width: 40px !important;
-    max-width: 40px !important;
+    width: 70px !important;
+    max-width: 70px !important;
   }
 
   main {
