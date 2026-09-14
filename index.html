@@ -21,9 +21,18 @@
 
     <section class="card">
       <h2>🔴 LIVE</h2>
-      <p>Round 1 of 12</p>
-      <h3>17:00–17:15</h3>
-      <p>Next round starts soon.</p>
+
+      <h3 id="round-number">
+        Loading tournament…
+      </h3>
+
+      <p id="round-time"></p>
+
+      <p id="countdown-label">
+        Tournament starts in
+      </p>
+
+      <h2 id="countdown">Loading…</h2>
     </section>
 
     <section class="card">
@@ -65,6 +74,8 @@
     </section>
 
   </main>
+
+  <script src="app.js"></script>
 
 </body>
 </html>
